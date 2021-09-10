@@ -1,11 +1,11 @@
 import React from 'react'
 
-function MainMenu() {
+function Quiz() {
   return (
     <div>
-
+      Quiz
     </div>
   )
 }
 
-export default MainMenu
+export default Quiz

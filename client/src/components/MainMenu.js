@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { QuizContext } from '../Helpers/Contexts';
+import { QuizContext } from '../helpers/Contexts';
 
 function MainMenu() {
   const { gameState, setGameState } = useContext(QuizContext)

@@ -4,7 +4,7 @@ import MainMenu from './components/MainMenu';
 import Quiz from './components/Quiz';
 import EndScreen from './components/EndScreen';
 
-import { QuizContext } from './Helpers/Contexts';
+import { QuizContext } from './helpers/Contexts';
 
 function App() {
   const [gameState, setGameState] = useState("menu");

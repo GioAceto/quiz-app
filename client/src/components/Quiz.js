@@ -1,9 +1,26 @@
-import React, { useState } from 'react';
-import Questions from '../helpers/QuestionBank';
+import React, { useState, useContext } from 'react';
+import { QuizContext } from '../helpers/Contexts';
+import { Questions } from '../helpers/QuestionBank';
 
 function Quiz() {
+
+  const { setGameState, score, setScore } = useContext(QuizContext);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [optionChosen, setOptionChosen] = useState("");
+
+  const nextQuestion = () => {
+    if (Questions[currentQuestion].answer === optionChosen) {
+      setScore(score + 1);
+    }
+    setCurrentQuestion(currentQuestion + 1);
+  };
+
+  const finishQuiz = () => {
+    if (Questions[currentQuestion].answer === optionChosen) {
+      setScore(score + 1);
+    }
+    setGameState("endScreen");
+  }
 
 
   return (
@@ -15,7 +32,11 @@ function Quiz() {
         <button onClick={() => setOptionChosen("C")}> {Questions[currentQuestion].optionC} </button>
         <button onClick={() => setOptionChosen("D")}> {Questions[currentQuestion].optionD} </button>
       </div>
-      <button>Next Question</button>
+      {currentQuestion === Questions.length - 1 ? (
+        <button onClick={finishQuiz}> Finish Quiz</button>
+      ) : (
+        <button onClick={nextQuestion}>Next Question</button>
+      )}
     </div>
   )
 }

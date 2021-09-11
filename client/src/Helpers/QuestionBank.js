@@ -1,4 +1,4 @@
-const Questions = [
+export const Questions = [
   {
     prompt: "Which ocean is the largest by surface area?",
     optionA: "Atlantic",
@@ -24,5 +24,3 @@ const Questions = [
     answer: "A"
   }
 ];
-
-export default Questions;

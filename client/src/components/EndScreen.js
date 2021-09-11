@@ -6,7 +6,7 @@ function EndScreen() {
   const { score, setScore, setGameState } = useContext(QuizContext);
 
   const restartQuiz = () => {
-    setScore = 0;
+    setScore(0);
     setGameState("menu");
   }
 

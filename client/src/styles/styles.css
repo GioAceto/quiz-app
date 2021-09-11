@@ -25,7 +25,8 @@
 }
 
 .app .menu,
-.app .quiz {
+.app .quiz,
+.app .endScreen {
   width: 500px;
   height: 500px;
   border-radius: 10px;
@@ -47,12 +48,14 @@
 }
 
 .app .menu h2,
-.app .quiz h2 {
+.app .quiz h2,
+.app .endScreen h2 {
   text-align: center;
 }
 
 .app .menu .options,
-.app .quiz .options {
+.app .quiz .options,
+.app .endScreen .options {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -69,7 +72,8 @@
 }
 
 .app .menu button,
-.app .quiz button {
+.app .quiz button,
+.app .endScreen button {
   width: 300px;
   height: 50px;
   border: none;
@@ -78,11 +82,13 @@
 }
 
 .app .menu button:hover,
-.app .quiz button:hover {
+.app .quiz button:hover,
+.app .endScreen button:hover {
   cursor: pointer;
 }
 
-.app .quiz {
+.app .quiz,
+.app .endScreen {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -95,16 +101,37 @@
           justify-content: space-between;
 }
 
-.app .quiz h2 {
+.app .quiz h2,
+.app .endScreen h2 {
   margin: 2rem 0 1rem 0;
   font-weight: 300;
 }
 
-.app .quiz button {
+.app .quiz button,
+.app .endScreen button {
   margin: 0.5rem 0;
 }
 
-.app .quiz .last {
+.app .quiz .last,
+.app .endScreen .last {
+  margin: 2rem 0;
+}
+
+.app .endScreen {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.app .endScreen h2 {
+  margin-bottom: 2rem;
+}
+
+.app .endScreen h3 {
+  font-weight: 200;
+}
+
+.app .endScreen button {
   margin: 2rem 0;
 }
 /*# sourceMappingURL=styles.css.map */

@@ -11,7 +11,7 @@ function EndScreen() {
   }
 
   return (
-    <div>
+    <div className="endScreen">
       {""}
       <h2>Quiz Finished</h2>
       <h3> Score</h3>

@@ -15,7 +15,8 @@
   }
 
   .menu,
-  .quiz {
+  .quiz,
+  .endScreen {
     width: 500px;
     height: 500px;
     border-radius: 10px;
@@ -50,7 +51,8 @@
     }
   }
 
-  .quiz {
+  .quiz,
+  .endScreen {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -65,6 +67,22 @@
     }
 
     .last {
+      margin: 2rem 0;
+    }
+  }
+
+  .endScreen {
+    justify-content: center;
+
+    h2 {
+      margin-bottom: 2rem;
+    }
+
+    h3 {
+      font-weight: 200;
+    }
+
+    button {
       margin: 2rem 0;
     }
   }

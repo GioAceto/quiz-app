@@ -33,9 +33,9 @@ function Quiz() {
         <button onClick={() => setOptionChosen("D")}> {Questions[currentQuestion].optionD} </button>
       </div>
       {currentQuestion === Questions.length - 1 ? (
-        <button onClick={finishQuiz}> Finish Quiz</button>
+        <button className="last" onClick={finishQuiz}> Finish Quiz</button>
       ) : (
-        <button onClick={nextQuestion}>Next Question</button>
+        <button className="last" onClick={nextQuestion}>Next Question</button>
       )}
     </div>
   )

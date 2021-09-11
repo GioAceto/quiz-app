@@ -5,7 +5,7 @@ const Questions = [
     optionB: "Pacific",
     optionC: "Indian",
     optionD: "Arctic",
-    answer: "optionB"
+    answer: "B"
   },
   {
     prompt: "Which river is the longest?",
@@ -13,7 +13,7 @@ const Questions = [
     optionB: "Amazon",
     optionC: "Mekong",
     optionD: "Nile",
-    answer: "optionD"
+    answer: "D"
   },
   {
     prompt: "Which lake is the deepest?",
@@ -21,8 +21,8 @@ const Questions = [
     optionB: "Vostok",
     optionC: "Victoria",
     optionD: "Crater",
-    answer: "optionA"
+    answer: "A"
   }
-]
+];
 
 export default Questions;
